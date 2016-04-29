@@ -1,0 +1,10 @@
+<h3>All the available products to bid for:</h3>
+<ul>
+	<% @products.each do |product| %>
+	<li> <%= link_to product.title, "/products/#{product.id}" %> </li>
+	<% end %>
+</ul>
+
+<button> <%= link_to "Add Product", "/products/new" %> </button>
+
+
